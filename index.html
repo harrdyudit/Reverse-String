@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            font-family: monospace;
+        }
+        .container{
+           text-align: center;
+           border: 2px solid grey;
+           height: 300px;
+           margin-top: 150px;
+        }
+        input{
+            padding: 10px 15px;
+            margin: 10px;
+            width: 240px;
+            font-size: 20px;
+            margin-top: 74px;
+           /* border: none; */
+           outline: none;
+           border: 2px solid green;
+        }
+        
+    </style>
+    <div class="container">
+    <h1>Reverse The String In Real Time With Decrementing For Loop In Input Text</h1>
+    <div class="in">
+
+        <input type="text" name="" id="reverse" onkeyup="reverseString()" class="item">
+        <input type="text" name="" id="showdata" class="item" >
+    </div>
+    </div>
+    
+</body>
+<script>
+    function reverseString(){
+        let reverse=document.getElementById("reverse").value;
+       
+
+        let newStr="";
+        for(i=reverse.length-1; i>=0; i--){
+          newStr+=reverse[i]
+
+        }
+            let showdata=document.getElementById("showdata").value=newStr
+
+    }
+</script>
+</html>
